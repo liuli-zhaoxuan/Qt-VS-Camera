@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Qt_Opencv_EnhanceClass</class>
+ <widget class="QMainWindow" name="Qt_Opencv_EnhanceClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt_Opencv_Enhance</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="viewLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>600</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Contrast_label">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>390</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>对比度</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brightness_label">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>390</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>亮度</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="contrast_slider">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>22</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>33</number>
+    </property>
+    <property name="sliderPosition">
+     <number>33</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="brightness_slider">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>10</y>
+      <width>22</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>33</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>410</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>410</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Qt_Opencv_Enhance.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>contrast_slider_Moved()</slot>
+  <slot>contrast_slider_valueChanged()</slot>
+ </slots>
+</ui>

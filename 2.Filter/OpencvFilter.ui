@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OpencvFilterClass</class>
+ <widget class="QMainWindow" name="OpencvFilterClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpencvFilter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="blurViewLabel">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>300</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gaussianViewLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>300</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mediaViewLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>300</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bilateralViewLabel">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>220</y>
+      <width>300</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="kernelSlider">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>31</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>33</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="sliderPosition">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="blurRadioBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>30</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="gaussianRadioBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>60</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gaussian</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="medianRadioBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>90</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Median</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="bilateralRadioBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>120</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bilateral</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveAsBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>180</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>另存为</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="OpencvFilter.qrc"/>
+ </resources>
+ <connections/>
+</ui>
